@@ -27,12 +27,12 @@ set confirm
 " let ayucolor="dark"
 
 "Plugins
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/plug-config/compe-config.lua
-source $HOME/.config/nvim/plug-config/lsp-config.vim
-source $HOME/.config/nvim/plug-config/python-lsp.lua
-source $HOME/.config/nvim/plug-config/html-lsp.lua
+source ~/AppData/Local/nvim/vim-plug/plugins.vim
+source ~/AppData/Local/nvim/themes/airline.vim
+source ~/AppData/Local/nvim/plug-config/compe-config.lua
+source ~/AppData/Local/nvim/plug-config/lsp-config.vim
+source ~/AppData/Local/nvim/plug-config/python-lsp.lua
+source ~/AppData/Local/nvim/plug-config/html-lsp.lua
 
 colorscheme ayu 
 
