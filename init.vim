@@ -1,32 +1,40 @@
-set nu 
 set exrc
+set ignorecase
+set smartcase 
 set guicursor=
 set relativenumber
-set hlsearch
 set hidden
+set noerrorbells
 set tabstop=4 softtabstop=4
-syntax on
 set shiftwidth=4
 set expandtab
 set smartindent
-set smartcase
-set ignorecase
+set nohlsearch
+set nu
 set noswapfile
 set nobackup
+set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set termguicolors
-set scrolloff=10
+set scrolloff=15
 set signcolumn=yes
-set cmdheight=2
+set cursorline
 set background=dark
+set confirm
+ let ayucolor="mirage"
+" let ayucolor="light"
+" let ayucolor="dark"
 
-call plug#begin('~/.vim/plugged')
+"Plugins
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/plug-config/compe-config.lua
+source $HOME/.config/nvim/plug-config/lsp-config.vim
+source $HOME/.config/nvim/plug-config/python-lsp.lua
+source $HOME/.config/nvim/plug-config/html-lsp.lua
 
-Plug 'mattn/emmet-vim'
-Plug 'morhetz/gruvbox'
-Plug 'cocopon/iceberg.vim'
+colorscheme ayu 
 
-call plug#end()
-
-colorscheme gruvbox
+"Key remapping
+map <C-n> :NERDTreeToggle
